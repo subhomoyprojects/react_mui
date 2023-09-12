@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className="header-wrapper">
       <AppBar position="static">
-        <Container maxWidth="xl">
+        <Container>
           <Toolbar disableGutters>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton size="large" aria-label="account of current user" aria-controls="menu-appBar" aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">

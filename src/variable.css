@@ -1,12 +1,13 @@
 :root {
-    --roboto: 'Roboto', sans-serif !important;
-    --primaryColor: #3B8CED;
-    --secondaryColor: #0E4A84;
-    --titleColor: #013465;
-    --errorColor: #FE0002;
-    --warnColor: #FFAA01;
-    --offWhite: #F1F1F1;
-    --inputBackground: #F5F5F5;
-    --textColor: #5C5E5F;
-    --inputBorderColor: #E8E9EA;
+  --roboto: "Roboto", sans-serif !important;
+  --primaryColor: #3b8ced;
+  --secondaryColor: #0e4a84;
+  --titleColor: #013465;
+  --errorColor: #fe0002;
+  --warnColor: #ffaa01;
+  --offWhite: #f1f1f1;
+  --inputBackground: #f5f5f5;
+  --textColor: #5c5e5f;
+  --inputBorderColor: #e8e9ea;
+  --successColor: #51b27e;
 }

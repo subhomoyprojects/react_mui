@@ -1,18 +1,50 @@
 .playStoreWrapper {
-    padding-block: 15px;
-    background-color: var(--secondaryColor);
+  padding-block: 15px;
+  background-color: var(--secondaryColor);
 }
 
 .storeBtnHolder {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
 }
 
-.storeBtnHolder li>* {
-    max-width: 100px;
-    padding: 0;
-    background-color: transparent;
+.storeBtnHolder li > * {
+  max-width: 100px;
+  padding: 0;
+  background-color: transparent;
+}
+.paymentMethod {
+  width: 50px;
+  min-height: 30px;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: 1px solid #fff;
+}
+.paymentMethod img {
+  transition: all 0.3s;
+}
+.paymentMethod:hover {
+  background-color: transparent;
+}
+.paymentMethod:hover img {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
+}
+.paymentHolder {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.paymentHolder li img {
+  max-height: 1.7rem;
+}
+.payment-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
