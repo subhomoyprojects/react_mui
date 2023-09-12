@@ -1,39 +1,10 @@
-import { Box, Container, Rating, Stack, Typography, styled } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import assets from "../../assets";
 import "./Home.css";
-import PaymentMethod from "./PaymentMethod";
-
-const paymentMethodIcon: string[] = [assets.applePay, assets.googlePay, assets.visa, assets.masterCard];
-
-const PaymentHolder = styled(Box)`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const RatingHolder = styled(Stack)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  & > * {
-    flex: 1;
-  }
-  h4 {
-    margin-left: 1rem !important;
-    color: #fff;
-    margin-top: 0 !important;
-  }
-`;
-
-const StarRating = styled(Rating)`
-  .MuiRating-iconEmpty {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  font-size: 2.5rem;
-  color: var(--successColor);
-  opacity: 1;
-`;
+import PaymentMethod from "./subComponents/PaymentMethod";
+import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import { PaymentHolder, RatingHolder, StarRating, TimerArea } from "./lid/StyleComponentHome";
+import { paymentMethodIcon } from "./lid/ArrayListComponents";
 
 export default function Home() {
   return (
@@ -72,6 +43,21 @@ export default function Home() {
               </ul>
             </Box>
           </PaymentHolder>
+        </Container>
+      </section>
+      <section className="liveDrawWrapper">
+        <Container style={{ display: "flex", justifyContent: "space-between" }}>
+          <Typography className="text-uppercase" variant="h3">
+            NEXT LIVE DRAW Begins
+          </Typography>
+          <TimerArea>
+            <AccessAlarmIcon className="clockIcon" />
+            <ul>
+              <li>16 Hours</li>
+              <li>16 Min</li>
+              <li>16 Sec</li>
+            </ul>
+          </TimerArea>
         </Container>
       </section>
     </>

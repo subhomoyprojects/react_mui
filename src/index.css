@@ -25,7 +25,11 @@ body {
 p {
   font-size: 1.4rem !important;
 }
-
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 img {
   max-width: 100%;
   display: inline-block;

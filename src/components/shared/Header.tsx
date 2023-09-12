@@ -1,4 +1,4 @@
-import { AppBar, Badge, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
+import { AppBar, Badge, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography, styled } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Shared.css";
@@ -22,11 +22,15 @@ export default function Header() {
     setAnchorElNav(null);
   };
 
+  const Navigation = styled(AppBar)`
+    background: linear-gradient(90deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+  `;
+
   // Method Area End
 
   return (
     <header className="header-wrapper">
-      <AppBar position="static">
+      <Navigation position="static">
         <Container>
           <Toolbar disableGutters>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -91,7 +95,7 @@ export default function Header() {
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>
+      </Navigation>
     </header>
   );
 }
