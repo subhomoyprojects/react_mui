@@ -1,0 +1,12 @@
+:root {
+    --roboto: 'Roboto', sans-serif !important;
+    --primaryColor: #3B8CED;
+    --secondaryColor: #0E4A84;
+    --titleColor: #013465;
+    --errorColor: #FE0002;
+    --warnColor: #FFAA01;
+    --offWhite: #F1F1F1;
+    --inputBackground: #F5F5F5;
+    --textColor: #5C5E5F;
+    --inputBorderColor: #E8E9EA;
+}

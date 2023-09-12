@@ -1,0 +1,35 @@
+.header-auth-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    max-width: 61px;
+    margin-right: 2rem;
+}
+
+.menu-item {
+    font-size: 1.4rem !important;
+}
+
+.menu-item:hover {
+    background-color: var(--secondaryColor) !important;
+}
+
+.cart {
+    font-size: 1.4rem;
+    margin-left: 2.3rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.icon {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    margin-left: 1.5rem;
+}
+
+.MuiBadge-badge {
+    background-color: var(--primaryColor) !important;
+}
