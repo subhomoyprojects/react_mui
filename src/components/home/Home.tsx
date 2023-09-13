@@ -4,8 +4,11 @@ import "./Home.css";
 import PaymentMethod from "./subComponents/PaymentMethod";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import { PaymentHolder, RatingHolder, StarRating, TimerArea, BannerContent, BannerContainer } from "./lid/StyleComponentHome";
-import { paymentMethodIcon } from "./lid/ArrayListComponents";
+import { howToPlayArray, paymentMethodIcon } from "./lid/ArrayListComponents";
 import GradientButton from "../btnComponent/GradientButton";
+import HowToPlay from "./subComponents/howToPlay";
+
+// howToPlayIcons
 
 export default function Home() {
   return (
@@ -77,6 +80,23 @@ export default function Home() {
             </Grid>
           </Grid>
         </BannerContainer>
+      </section>
+      <section className="commonGap howToPlayWrapper">
+        <Container>
+          <Box>
+            <Typography variant="h3" className="text-center text-uppercase">
+              How To play <span className="subTitle">1, 2, 3 OOOSCH! Its that simple</span>
+            </Typography>
+          </Box>
+          <ul className="playIntro">
+            {Array.isArray(howToPlayArray) &&
+              howToPlayArray.map((item, index) => (
+                <li key={index}>
+                  <HowToPlay counter={index + 1} content={item.content} icon={item.icon} />
+                </li>
+              ))}
+          </ul>
+        </Container>
       </section>
     </>
   );

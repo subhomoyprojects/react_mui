@@ -10,7 +10,7 @@
   margin: 0;
 }
 
-.storeBtnHolder li>* {
+.storeBtnHolder li > * {
   max-width: 100px;
   padding: 0;
   background-color: transparent;
@@ -62,7 +62,7 @@
 }
 
 .liveDrawWrapper h3 {
-  color: #fff;
+  color: #fff !important;
 }
 
 .bannerWrapper .bannerImgHolder {
@@ -71,7 +71,7 @@
 
 .bannerWrapper .bannerImgHolder::before {
   content: "";
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 54.52%, #000 88.8%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 54.52%, #000 88.8%);
   left: 0;
   right: 0;
   top: 0;
@@ -92,4 +92,57 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+.howToPlayWrapper {
+  border-block: 1px solid #cdd8e3;
+  background-color: #fafafa;
+}
+.playIntro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 6rem;
+}
+.playIntro > * {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+}
+.playIntro .iconHolder {
+  width: 9.4rem;
+  height: 9.4rem;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  background-color: var(--primaryColor);
+  position: relative;
+}
+.playIntro .iconHolder svg {
+  width: 4.4rem !important;
+  height: 4.4rem !important;
+}
+.playIntro .iconHolder .counter {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  font-weight: 600;
+  background-color: #dfeeff;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+}
+.playIntro p {
+  font-size: 2.5rem;
+  color: #676767;
+  max-width: 170px;
+  display: inline-flex;
+  margin-left: 1.2rem;
 }

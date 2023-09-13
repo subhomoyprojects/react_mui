@@ -57,7 +57,7 @@ export const BannerContainer = styled(Container)`
   position: absolute;
   z-index: 2;
   bottom: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   margin-inline: auto;
   left: 0;
   right: 0;

@@ -23,7 +23,7 @@ body {
   font-size: 1.4rem;
 }
 p {
-  font-size: 1.4rem !important;
+  font-size: 1.4rem;
 }
 ul {
   list-style-type: none;
@@ -111,13 +111,34 @@ h6 {
 }
 
 .h1,
-h1 {
-  font-size: 5rem;
+h1,
+h1,
+.MuiTypography-h1 {
+  font-size: 4.55rem;
 }
-
+h2,
 .h2,
-h2 {
-  font-size: 2.88rem;
+h2.MuiTypography-h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--titleColor);
+}
+.h3,
+h3,
+h3.MuiTypography-h3 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: var(--titleColor);
+}
+.h3 .subTitle,
+h3 .subTitle,
+h3.MuiTypography-h3 .subTitle {
+  display: block;
+  color: #000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: none;
+  margin-top: 1rem;
 }
 
 ol,
@@ -265,6 +286,21 @@ ul {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.commonGap {
+  padding-block: 5rem;
 }
 
 /* Common Style End */
