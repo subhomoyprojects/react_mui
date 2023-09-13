@@ -146,3 +146,25 @@
   display: inline-flex;
   margin-left: 1.2rem;
 }
+.awardWinItem {
+  display: flex;
+  align-items: center;
+}
+.awardWinIcon {
+  margin-right: 1rem;
+  background-color: #dfeeff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondaryColor);
+  width: 7.6rem;
+  height: 6.8rem;
+  border-radius: 1rem;
+}
+.awardWinIcon svg {
+  width: 42px;
+  height: 32px;
+}
+.awardWinningWrapper {
+  background-color: #f5f6f8;
+}

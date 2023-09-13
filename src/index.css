@@ -140,6 +140,23 @@ h3.MuiTypography-h3 .subTitle {
   text-transform: none;
   margin-top: 1rem;
 }
+.h4,
+h4,
+h4.MuiTypography-h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--primaryColor);
+}
+.h4 .subTitle,
+h4 .subTitle,
+h4.MuiTypography-h4 .subTitle {
+  display: block;
+  color: #6e6e6e;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: none;
+  margin-top: 1rem;
+}
 
 ol,
 ul {

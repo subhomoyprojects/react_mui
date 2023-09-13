@@ -15,6 +15,11 @@ export default function GradientButton({ buttonText }: any) {
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 400;
+    background-size: 100% 300%;
+    transition: all 0.3s;
+    &:hover {
+      background-position: left 100%;
+    }
   `;
   return (
     <>
