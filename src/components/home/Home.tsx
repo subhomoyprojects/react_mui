@@ -1,10 +1,11 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import assets from "../../assets";
 import "./Home.css";
 import PaymentMethod from "./subComponents/PaymentMethod";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
-import { PaymentHolder, RatingHolder, StarRating, TimerArea } from "./lid/StyleComponentHome";
+import { PaymentHolder, RatingHolder, StarRating, TimerArea, BannerContent, BannerContainer } from "./lid/StyleComponentHome";
 import { paymentMethodIcon } from "./lid/ArrayListComponents";
+import GradientButton from "../btnComponent/GradientButton";
 
 export default function Home() {
   return (
@@ -59,6 +60,23 @@ export default function Home() {
             </ul>
           </TimerArea>
         </Container>
+      </section>
+      <section className="bannerWrapper">
+        <figure className="bannerImgHolder">
+          <img src={assets.banner} alt="" />
+        </figure>
+        <BannerContainer>
+          <Grid container spacing={2}>
+            <Grid item md={6}>
+              <BannerContent variant="h1">
+                2016 Volkswagen Golf <span>GTD Auto + €3,000 Cash</span>
+              </BannerContent>
+            </Grid>
+            <Grid item md={6} className="bannerButtonHolder">
+              <GradientButton buttonText="Enter Now" />
+            </Grid>
+          </Grid>
+        </BannerContainer>
       </section>
     </>
   );
