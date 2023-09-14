@@ -72,3 +72,23 @@ export const BannerContent = styled(Typography)`
     color: var(--primaryColor);
   }
 `;
+
+export const SectionHeading = styled(Typography)`
+  color: var(--titleColor);
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  text-align: center;
+  margin-bottom: 6rem;
+`;
+
+export const ProductCardTitle = styled(Typography)`
+  font-size: 1.8rem !important;
+  color: var(--titleColor) !important;
+  text-transform: capitalize;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 44px;
+`;

@@ -3,10 +3,11 @@ import assets from "../../assets";
 import "./Home.css";
 import PaymentMethod from "./subComponents/PaymentMethod";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
-import { PaymentHolder, RatingHolder, StarRating, TimerArea, BannerContent, BannerContainer } from "./lid/StyleComponentHome";
-import { howToPlayArray, paymentMethodIcon, awardWinContentArray } from "./lid/ArrayListComponents";
+import { PaymentHolder, RatingHolder, StarRating, TimerArea, BannerContent, BannerContainer, SectionHeading } from "./lid/StyleComponentHome";
+import { howToPlayArray, paymentMethodIcon, awardWinContentArray, featureCompetition } from "./lid/ArrayListComponents";
 import GradientButton from "../btnComponent/GradientButton";
-import HowToPlay from "./subComponents/howToPlay";
+import HowToPlay from "./subComponents/HowToPlay";
+import ProductCard from "./subComponents/ProductCard";
 
 // howToPlayIcons
 
@@ -117,6 +118,25 @@ export default function Home() {
                 </li>
               ))}
           </ul>
+        </Container>
+      </section>
+      <section className="commonGap competitionsWrapper">
+        <Container>
+          <Box>
+            <SectionHeading variant="h2">Featured Competitions</SectionHeading>
+          </Box>
+          <Box>
+            <Grid container spacing={2}>
+              {Array.isArray(featureCompetition) &&
+                featureCompetition.map((item, index) => {
+                  return (
+                    <Grid item md={4} lg={3} spacing={5} key={index}>
+                      <ProductCard img={item.img} title={item.title} package={item.package} tag={item.tag} announcement={item.announcement} />
+                    </Grid>
+                  );
+                })}
+            </Grid>
+          </Box>
         </Container>
       </section>
     </>
