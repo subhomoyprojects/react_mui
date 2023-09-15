@@ -8,7 +8,7 @@ export default function GradientButton({ buttonText }: any) {
     min-height: 6.8rem;
     border-radius: 10px;
     width: 100%;
-    max-width: 230px;
+    max-width: 300px;
     display: inline-flex;
     align-items: center;
     justify-content: center;

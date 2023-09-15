@@ -4,10 +4,18 @@ import "./Home.css";
 import PaymentMethod from "./subComponents/PaymentMethod";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import { PaymentHolder, RatingHolder, StarRating, TimerArea, BannerContent, BannerContainer, SectionHeading } from "./lid/StyleComponentHome";
-import { howToPlayArray, paymentMethodIcon, awardWinContentArray, featureCompetition } from "./lid/ArrayListComponents";
+import { howToPlayArray, paymentMethodIcon, awardWinContentArray, winnerCard } from "./lid/ArrayListComponents";
 import GradientButton from "../btnComponent/GradientButton";
 import HowToPlay from "./subComponents/HowToPlay";
 import ProductCard from "./subComponents/ProductCard";
+import { featureCompetition } from "../proListComponent/ProList";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import TopWinner from "./subComponents/TopWinner";
 
 // howToPlayIcons
 
@@ -128,7 +136,7 @@ export default function Home() {
           <Box>
             <Grid container spacing={2}>
               {Array.isArray(featureCompetition) &&
-                featureCompetition.map((item, index) => {
+                featureCompetition.slice(0, 8).map((item, index) => {
                   return (
                     <Grid item md={4} lg={3} spacing={5} key={index}>
                       <ProductCard img={item.img} title={item.title} package={item.package} tag={item.tag} announcement={item.announcement} />
@@ -136,6 +144,83 @@ export default function Home() {
                   );
                 })}
             </Grid>
+          </Box>
+        </Container>
+      </section>
+      <section className="commonGap competitionsWrapper">
+        <Container>
+          <Box>
+            <SectionHeading variant="h2">Ending Soon</SectionHeading>
+          </Box>
+          <Box>
+            <Grid container spacing={2}>
+              {Array.isArray(featureCompetition) &&
+                featureCompetition.slice(0, 8).map((item, index) => {
+                  return (
+                    <Grid item md={4} lg={3} spacing={5} key={index}>
+                      <ProductCard img={item.img} title={item.title} package={item.package} tag={item.tag} announcement={item.announcement} />
+                    </Grid>
+                  );
+                })}
+            </Grid>
+          </Box>
+        </Container>
+      </section>
+      <section className="commonGap competitionsWrapper">
+        <Container>
+          <Box>
+            <SectionHeading variant="h2">More Competitions</SectionHeading>
+          </Box>
+          <Box>
+            <Grid container spacing={2}>
+              {Array.isArray(featureCompetition) &&
+                featureCompetition.slice(8, 12).map((item, index) => {
+                  return (
+                    <Grid item md={4} lg={3} spacing={5} key={index}>
+                      <ProductCard img={item.img} title={item.title} package={item.package} tag={item.tag} announcement={item.announcement} bgColor="var(--primaryColor)" />
+                    </Grid>
+                  );
+                })}
+            </Grid>
+          </Box>
+          <Box mt={5} className="text-center">
+            <GradientButton buttonText="View All" />
+          </Box>
+        </Container>
+      </section>
+      <section className="commonGap topWinnerWrapper">
+        <Container>
+          <Box>
+            <SectionHeading variant="h2" style={{ color: "#fff" }}>
+              Top Winner
+            </SectionHeading>
+          </Box>
+          <Box>
+            <Swiper
+              modules={[Navigation]}
+              navigation
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 15,
+                },
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
+            >
+              {Array.isArray(winnerCard) &&
+                winnerCard.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <TopWinner title={item.title} img={item.image} />
+                  </SwiperSlide>
+                ))}
+            </Swiper>
           </Box>
         </Container>
       </section>

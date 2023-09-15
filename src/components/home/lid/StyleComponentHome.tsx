@@ -1,4 +1,4 @@
-import { Box, Container, Rating, Stack, Typography, styled } from "@mui/material";
+import { Box, Card, Container, Rating, Stack, Typography, styled } from "@mui/material";
 
 export const PaymentHolder = styled(Box)`
   display: flex;
@@ -91,4 +91,20 @@ export const ProductCardTitle = styled(Typography)`
   -webkit-box-orient: vertical;
   overflow: hidden;
   min-height: 44px;
+`;
+export const TopWinnerCard = styled(Card)`
+  border-radius: 1.6rem;
+  overflow: hidden;
+  .MuiTypography-h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    min-height: 80px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 `;

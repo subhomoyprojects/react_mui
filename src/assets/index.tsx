@@ -18,6 +18,9 @@ import pro9 from "./images/pro9.png";
 import pro10 from "./images/pro10.png";
 import pro11 from "./images/pro11.png";
 import pro12 from "./images/pro12.png";
+import winner1 from "./images/winner1.png";
+import winner2 from "./images/winner2.png";
+import winner3 from "./images/winner3.png";
 
 export default {
   logo,
@@ -40,4 +43,7 @@ export default {
   pro10,
   pro11,
   pro12,
+  winner1,
+  winner2,
+  winner3,
 };
