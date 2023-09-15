@@ -356,3 +356,34 @@ ul {
 .swiper-slide > * {
   height: 100%;
 }
+.socialMediaHolder {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.socialMediaHolder li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialMediaHolder li:not(:last-child) {
+  margin-right: 10px;
+}
+.socialMediaHolder li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color: var(--primaryColor);
+  color: #fff;
+  font-size: 2rem;
+}
+.socialMediaHolder li a:hover {
+  background-color: var(--titleColor);
+}
+.socialMediaHolder li a img {
+  width: 2rem;
+  height: 2rem;
+}

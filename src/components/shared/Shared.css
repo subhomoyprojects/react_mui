@@ -1,35 +1,71 @@
 .header-auth-area {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo {
-    max-width: 61px;
-    margin-right: 2rem;
+  max-width: 61px;
+  margin-right: 2rem;
 }
 
 .menu-item {
-    font-size: 1.4rem !important;
+  font-size: 1.4rem !important;
 }
 
 .menu-item:hover {
-    background-color: var(--secondaryColor) !important;
+  background-color: var(--secondaryColor) !important;
 }
 
 .cart {
-    font-size: 1.4rem;
-    margin-left: 2.3rem;
-    color: #fff;
-    font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 2.3rem;
+  color: #fff;
+  font-weight: 500;
 }
 
 .icon {
-    width: 2.5rem !important;
-    height: 2.5rem !important;
-    margin-left: 1.5rem;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  margin-left: 1.5rem;
 }
 
 .MuiBadge-badge {
-    background-color: var(--primaryColor) !important;
+  background-color: var(--primaryColor) !important;
+}
+.footerWrapper {
+  background-color: var(--secondaryColor);
+}
+.paymentHolder.mt-3 {
+  margin-block: 1.5rem;
+}
+.footerTitle.MuiTypography-h4 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.storeBtnHolder.mt-3 {
+  margin-top: 1.5rem;
+}
+.copyRight {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 2;
+}
+.copyRight a {
+  display: inline-flex;
+  padding-inline: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.copyRight a:hover {
+  text-decoration: underline;
+}
+.copyRight a:not(:last-child)::after {
+  content: "|";
+  margin-left: 5px;
+}
+.socialHolder {
+  padding-left: 50px;
 }
