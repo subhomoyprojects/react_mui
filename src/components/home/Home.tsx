@@ -4,7 +4,7 @@ import "./Home.css";
 import PaymentMethod from "./subComponents/PaymentMethod";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import { PaymentHolder, RatingHolder, StarRating, TimerArea, BannerContent, BannerContainer, SectionHeading } from "./lid/StyleComponentHome";
-import { howToPlayArray, paymentMethodIcon, awardWinContentArray, winnerCard } from "./lid/ArrayListComponents";
+import { howToPlayArray, paymentMethodIcon, awardWinContentArray, winnerCard, testimonials } from "./lid/ArrayListComponents";
 import GradientButton from "../btnComponent/GradientButton";
 import HowToPlay from "./subComponents/HowToPlay";
 import ProductCard from "./subComponents/ProductCard";
@@ -16,6 +16,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import TopWinner from "./subComponents/TopWinner";
+import Testimonials from "./subComponents/Testimonials";
 
 // howToPlayIcons
 
@@ -218,6 +219,43 @@ export default function Home() {
                 winnerCard.map((item, index) => (
                   <SwiperSlide key={index}>
                     <TopWinner title={item.title} img={item.image} />
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </Box>
+          <Box className="text-center" mt={5}>
+            <GradientButton buttonText="View all" />
+          </Box>
+        </Container>
+      </section>
+      <section className="commonGap testimonialsWrapper">
+        <Container>
+          <Box>
+            <SectionHeading variant="h2">Testimonials</SectionHeading>
+          </Box>
+          <Box>
+            <Swiper
+              modules={[Navigation]}
+              navigation
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 15,
+                },
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
+            >
+              {Array.isArray(testimonials) &&
+                testimonials.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <Testimonials image={item.image} name={item.name} designation={item.designation} content={item.content} />
                   </SwiperSlide>
                 ))}
             </Swiper>

@@ -108,3 +108,35 @@ export const TopWinnerCard = styled(Card)`
     overflow: hidden;
   }
 `;
+
+export const TestimonialsCard = styled(Card)`
+  background-color: #f0f6ff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  .abater {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-inline: auto;
+    margin-bottom: 30px;
+  }
+  .abater img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h4 {
+    font-size: 18px;
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+  h4 span {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+`;

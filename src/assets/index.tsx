@@ -21,6 +21,9 @@ import pro12 from "./images/pro12.png";
 import winner1 from "./images/winner1.png";
 import winner2 from "./images/winner2.png";
 import winner3 from "./images/winner3.png";
+import testimonials1 from "./images/testimonials1.png";
+import testimonials2 from "./images/testimonials2.png";
+import testimonials3 from "./images/testimonials3.png";
 
 export default {
   logo,
@@ -46,4 +49,7 @@ export default {
   winner1,
   winner2,
   winner3,
+  testimonials1,
+  testimonials2,
+  testimonials3,
 };

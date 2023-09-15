@@ -323,3 +323,36 @@ ul {
 
 /* Common Style End */
 /* Common Style End */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #fff;
+}
+/* .swiper-button-prev {
+  margin-left: -100px;
+}
+.swiper-button-next {
+  margin-right: -100px;
+} */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px;
+}
+.swiper-slide {
+  height: auto;
+  padding-bottom: 10px;
+}
+.swiper-slide > * {
+  height: 100%;
+}

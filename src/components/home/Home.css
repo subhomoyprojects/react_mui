@@ -228,5 +228,5 @@
   font-size: inherit;
 }
 .topWinnerWrapper {
-  background-color: var(--secondaryColor);
+  background-color: var(--titleColor);
 }
