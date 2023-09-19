@@ -77,6 +77,9 @@ export default function Home() {
       <section className="bannerWrapper">
         <figure className="bannerImgHolder">
           <img src={assets.banner} alt="" />
+          <div className="ribbon-content">
+            <span className="ribbon">Ending soon</span>
+          </div>
         </figure>
         <BannerContainer>
           <Grid container spacing={2}>

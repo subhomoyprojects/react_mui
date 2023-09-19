@@ -69,6 +69,48 @@
   position: relative;
 }
 
+.ribbon-content {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 130px;
+  height: 133px;
+  overflow: hidden;
+}
+
+.ribbon {
+  display: inline-block;
+  position: absolute;
+  padding: 7px 0;
+  left: -23px;
+  top: 38px;
+  width: 192px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  background: var(--warnColor);
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 2px 2px var(--warnColor);
+  letter-spacing: 0.05em;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ribbon::before {
+  position: absolute;
+  content: "";
+  border-top: 4px solid var(--warnColor);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  bottom: -4px;
+}
+
+.ribbon::before {
+  left: 7px;
+}
+
 .bannerWrapper .bannerImgHolder::before {
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 54.52%, #000 88.8%);
@@ -93,10 +135,12 @@
   align-items: center;
   justify-content: flex-end;
 }
+
 .howToPlayWrapper {
   border-block: 1px solid #cdd8e3;
   background-color: #fafafa;
 }
+
 .playIntro {
   display: flex;
   flex-wrap: wrap;
@@ -104,11 +148,13 @@
   gap: 10px;
   margin-top: 6rem;
 }
+
 .playIntro > * {
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
 }
+
 .playIntro .iconHolder {
   width: 9.4rem;
   height: 9.4rem;
@@ -120,10 +166,12 @@
   background-color: var(--primaryColor);
   position: relative;
 }
+
 .playIntro .iconHolder svg {
   width: 4.4rem !important;
   height: 4.4rem !important;
 }
+
 .playIntro .iconHolder .counter {
   font-size: 2rem;
   color: var(--primaryColor);
@@ -139,6 +187,7 @@
   left: -2rem;
   top: 0;
 }
+
 .playIntro p {
   font-size: 2.5rem;
   color: #676767;
@@ -146,10 +195,12 @@
   display: inline-flex;
   margin-left: 1.2rem;
 }
+
 .awardWinItem {
   display: flex;
   align-items: center;
 }
+
 .awardWinIcon {
   margin-right: 1rem;
   background-color: #dfeeff;
@@ -161,21 +212,26 @@
   height: 6.8rem;
   border-radius: 1rem;
 }
+
 .awardWinIcon svg {
   width: 42px;
   height: 32px;
 }
+
 .awardWinningWrapper {
   background-color: #f5f6f8;
 }
+
 .proCardHolder .MuiCardMedia-img {
   border-radius: 10px 10px 0 0;
   max-height: 217px;
   object-fit: cover;
 }
+
 .proImgHolder {
   position: relative;
 }
+
 .proImgHolder span {
   position: absolute;
   bottom: 0;
@@ -186,6 +242,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .proImgHolder span b {
   width: 100%;
   flex: 0 0 auto;
@@ -198,6 +255,7 @@
   text-transform: uppercase;
   background-color: var(--errorColor);
 }
+
 .proImgHolder span small {
   background-color: var(--secondaryColor);
   color: #fff;
@@ -212,6 +270,7 @@
   width: auto;
   min-height: 30px;
 }
+
 .productTag {
   background-color: var(--successColor);
   color: #fff;
@@ -222,11 +281,13 @@
   justify-content: center;
   text-transform: uppercase;
 }
+
 .productTag h5 {
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
 }
+
 .topWinnerWrapper {
   background-color: var(--titleColor);
 }
